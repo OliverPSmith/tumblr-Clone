@@ -72,13 +72,6 @@ header {
     outline: none;
 }
 
-/*
-.search-input:focus + .header-form button {
-    outline: none;
-    background-color: white;
-}   */
-
-
 .logo-small {
     padding-right: 20px;
 }
@@ -108,16 +101,6 @@ header {
 /* Main */
 
 .content {
-  /*  position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center; */
-
-    
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +137,6 @@ header {
 }
 
 .content form {
-   /* vertical-align: baseline; */
    margin-top: 12px;
 }
 
@@ -210,6 +192,7 @@ header {
     margin-left: 10px;
 }
 
+/* Rest of main content */
 
 .t-o-service {
     font-size: 12px;
@@ -232,6 +215,7 @@ header {
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
+    background-color: #fff;
 }
 .continue-with button:hover {
     cursor: pointer;
@@ -248,7 +232,41 @@ header {
     cursor: pointer;
 }
 
+/****************************** */
+/* Side Nav Rings */
 
+.side-nav {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-ring {
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px #fff;
+    height: 15px;
+    margin-bottom: 10px;
+    opacity: .4;
+    position: relative;
+    width: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.nav-ring:hover {
+    opacity: 1;
+}
+.side-nav .selected {
+    background: #fff;
+    box-shadow: none;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 999px) {
+    .nav-ring {
+        display: none;
+    }
+}
 /****************************** */
 /* Footer */
 
